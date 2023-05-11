@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <h1 class="calc">calc</h1>
+        <section class="themesec">
+          <p class="theme">THEME</p>
+          <div class="toggle">
+            <div class="digits">
+              <p class="digit">1</p>
+              <p class="digit">2</p>
+              <p class="digit">3</p>
+            </div>
+            <div class="tri-state-toggle">
+              <input class="button" type="radio" name="toggle" id="one" />
+              <input class="button" type="radio" name="toggle" id="two" />
+              <input class="button" type="radio" name="toggle" id="three" />
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- main -->
+      <main>
+        <section class="result">
+          <p class="resultnum">0</p>
+        </section>
+        <section class="operationsec">
+          <button class="num">7</button>
+          <button class="num">8</button>
+          <button class="num">9</button>
+          <button class="num-DEL">DEL</button>
+          <button class="num">4</button>
+          <button class="num">5</button>
+          <button class="num">6</button>
+          <button class="num-operation">+</button>
+          <button class="num">1</button>
+          <button class="num">2</button>
+          <button class="num">3</button>
+          <button class="num-operation">-</button>
+          <button class="num">.</button>
+          <button class="num">0</button>
+          <button class="num-operation">/</button>
+          <button class="num-operation">*</button>
+          <button class="reset">RESET</button>
+          <button id="equal">=</button>
+        </section>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

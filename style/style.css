@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  background: #3a4663;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+
+header > h1 {
+  font-size: 32px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.533333px;
+  color: #ffffff;
+}
+.themesec {
+  text-align: center;
+  align-items: end;
+  display: flex;
+  gap: 2.6rem;
+}
+.themesec > p {
+  font-size: 12px;
+  line-height: 11px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.digits {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  line-height: 11px;
+  text-align: center;
+  color: #ffffff;
+}
+.toggle {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  height: 1.6rem;
+  width: 1.5rem;
+  background-color: #f96b5b;
+  appearance: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+}
+.tri-state-toggle {
+  background: #242d44;
+  border-radius: 13px;
+}
+#one {
+  opacity: 1;
+}
+/* ******************************************************* */
+/* header section ends here */
+/* ******************************************************* */
+.result {
+  background: #181f33;
+  border-radius: 10px;
+  height: 8.8rem;
+  margin: 3.2rem 0 2.4rem 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 24px;
+}
+.resultnum {
+  font-size: 40px;
+  line-height: 37px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #ffffff;
+}
+.operationsec {
+  padding: 24px;
+  background: #242d44;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.3rem;
+}
+.num,
+.decimal,
+.num-operation {
+  background: #eae3dc;
+  box-shadow: inset 0px -4px 0px #b3a497;
+  border-radius: 5px;
+  width: 60px;
+  height: 64px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: -0.533333px;
+  color: #434a59;
+  border-width: 0px;
+  cursor: pointer;
+}
+.num:active {
+  background-color: #fffffe;
+}
+
+.decimal:active {
+  background-color: #fffffe;
+}
+.num-operation:active {
+  background-color: #fffffe;
+}
+.num-DEL {
+  background: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+  border-radius: 5px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: -0.333333px;
+  color: #ffffff;
+  cursor: pointer;
+  border-width: 0;
+}
+.num-DEL:active {
+  background-color: #a2b2e1;
+  box-shadow: inset 0px -4px 0px #414e73;
+}
+.reset {
+  background: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+  border-radius: 5px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: -0.333333px;
+  color: #ffffff;
+  border-width: 0;
+  grid-column: 1 / span 2;
+  cursor: pointer;
+}
+.reset:active {
+  background-color: #a2b2e1;
+}
+#equal {
+  background-color: #d03f2f;
+  box-shadow: inset 0px -4px 0px #93261a;
+  border-radius: 5px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: -0.333333px;
+  color: #ffffff;
+  grid-column: 3 / span 2;
+  border-width: 0;
+  cursor: pointer;
+  width: 100%;
+}
+#equal:active {
+  background-color: #f96b5b;
+}
+/* *********************************************** */
+/* desktop version */
+/* *********************************************** */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 54rem;
+  }
+  .num,
+  .decimal,
+  .num-operation {
+    width: unset;
+  }
+
+  .operationsec {
+    gap: 2.4rem;
+  }
+}
